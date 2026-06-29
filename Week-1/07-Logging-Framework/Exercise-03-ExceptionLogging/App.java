@@ -1,0 +1,23 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class App {
+
+    private static final Logger logger =
+            LoggerFactory.getLogger(App.class);
+
+    public static void main(String[] args) {
+
+        try {
+
+            int x = 10 / 0;
+
+        } catch (Exception e) {
+
+            logger.error("Exception occurred", e);
+
+        }
+
+    }
+
+}
